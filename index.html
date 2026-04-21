@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rn7 - Waves</title>
+    <meta name="description" content="Site Waves" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/uranus.png" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-blur">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+          <span class="brand-badge">
+            <span class="glow-dot" aria-hidden="true"></span>
+            <span class="fw-bold">Uranus</span>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler focus-ring"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#album">Álbum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tracks">Faixas</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#game">Jogo</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#links">Links</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-sm btn-neo focus-ring" href="#game"
+                ><i class="bi bi-controller"></i> Jogar agora</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="top" class="hero">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="pill"><i class="bi bi-disc"></i> Álbum</span>
+              <span class="pill"><i class="bi bi-stars"></i> Mini Game</span>
+            </div>
+
+            <h1 class="hero-title">
+              Com 9 faixas <span class="gradient-text">Waves</span> é um projeto
+              "nostálgico e futurista" ao mesmo tempo.
+            </h1>
+            <p class="mt-3 subtle hero-sub">
+              Conheça um pouco mais sobre o álbum, veja a tracklist, ouça nas
+              plataformas e jogue o mini game exclusivo inspirado na vibe do
+              disco.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a class="btn btn-neo btn-lg focus-ring" href="#links"
+                ><i class="bi bi-play-circle"></i> Ouvir</a
+              >
+              <button
+                class="btn btn-ghost btn-lg focus-ring"
+                data-bs-toggle="modal"
+                data-bs-target="#howToModal"
+                type="button"
+              >
+                <i class="bi bi-question-circle"></i> Ordem Cronológica
+              </button>
+            </div>
+
+            <div class="note mt-4 tiny">
+              <strong>A Tracklist</strong> não segue ordem cronológica: a ordem
+              é de acordo com a vibe da música (começando da faixa mais agitada
+              e terminando com a mais suave).
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="glass album-card p-3 p-md-4" id="album">
+              <div class="row g-3 align-items-center">
+                <div class="col-12 col-md-6">
+                  <img
+                    class="cover"
+                    src="assets/capa.jpg"
+                    alt="Capa do álbum"
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <h2 class="mb-1 section-title">
+                      <span class="gradient-text">Rn7 - Waves</span>
+                    </h2>
+                    <span class="pill">2026</span>
+                  </div>
+                  <hr class="my-2 border-0" />
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-neo focus-ring" href="#game"
+                      ><i class="bi bi-controller"></i> Jogar Wave Game</a
+                    >
+                    <a class="btn btn-ghost focus-ring" href="#tracks"
+                      ><i class="bi bi-list-stars"></i> Ver tracklist</a
+                    >
+                  </div>
+
+                  <hr class="my-2 border-0" />
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="pill"
+                      ><i class="bi bi-music-note"></i> 9 faixas</span
+                    >
+                    <span class="pill"
+                      ><i class="bi bi-lock"></i> 1 faixa bônus</span
+                    >
+                    <span class="pill"
+                      ><i class="bi bi-headphones"></i> Hip-Hop/ Rap/ R&B</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- c r -->
+      <div
+        id="uranus-launch-countdown"
+        class="col-10 col-md-10 mx-auto uranus-countdown"
+        data-launch-at="2026-05-07T19:00:00-03:00"
+      >
+        <style>
+          .uranus-countdown {
+            --cd-bg: rgba(255, 255, 255, 0.06);
+            --cd-stroke: rgba(255, 255, 255, 0.12);
+            --cd-text: rgba(255, 255, 255, 0.92);
+            --cd-muted: rgba(255, 255, 255, 0.65);
+            --cd-violet: #8b5cf6;
+            --cd-cyan: #22d3ee;
+            --cd-pink: #ec4899;
+
+            margin-top: 14px;
+          }
+
+          .uranus-countdown .cd-card {
+            border: 1px solid var(--cd-stroke);
+            background: var(--cd-bg);
+            border-radius: 18px;
+            padding: 16px;
+            box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+            position: relative;
+            overflow: hidden;
+            color: var(--cd-text);
+          }
+
+          .uranus-countdown .cd-card::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            background:
+              radial-gradient(
+                560px 260px at 20% 10%,
+                rgba(139, 92, 246, 0.35),
+                transparent 60%
+              ),
+              radial-gradient(
+                560px 260px at 80% 15%,
+                rgba(34, 211, 238, 0.25),
+                transparent 60%
+              ),
+              radial-gradient(
+                560px 260px at 55% 90%,
+                rgba(236, 72, 153, 0.16),
+                transparent 60%
+              );
+            opacity: 0.9;
+            pointer-events: none;
+          }
+
+          .uranus-countdown .cd-card > * {
+            position: relative;
+          }
+
+          .uranus-countdown .cd-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+          }
+
+          .uranus-countdown .cd-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--cd-stroke);
+            background: rgba(255, 255, 255, 0.06);
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            color: rgba(255, 255, 255, 0.86);
+            user-select: none;
+          }
+
+          .uranus-countdown .cd-title {
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            font-size: 18px;
+            line-height: 1.2;
+          }
+
+          .uranus-countdown .cd-sub {
+            margin: 4px 0 0;
+            color: var(--cd-muted);
+            font-size: 14px;
+          }
+
+          .uranus-countdown .cd-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+          }
+
+          .uranus-countdown .cd-unit {
+            border: 1px solid var(--cd-stroke);
+            background: rgba(0, 0, 0, 0.16);
+            border-radius: 16px;
+            padding: 10px 10px 8px;
+            text-align: center;
+          }
+
+          .uranus-countdown .cd-num {
+            font-variant-numeric: tabular-nums;
+            font-weight: 900;
+            font-size: clamp(22px, 2vw + 10px, 40px);
+            line-height: 1;
+            background: linear-gradient(
+              90deg,
+              var(--cd-violet),
+              var(--cd-cyan)
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+          }
+
+          .uranus-countdown .cd-label {
+            margin-top: 6px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.72);
+          }
+
+          .uranus-countdown .cd-meta {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            color: var(--cd-muted);
+            font-size: 13px;
+          }
+
+          .uranus-countdown .cd-dot {
+            opacity: 0.55;
+          }
+
+          .uranus-countdown .cd-actions {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+          }
+
+          .uranus-countdown .cd-btn {
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 14px;
+            padding: 10px 12px;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 13px;
+            user-select: none;
+          }
+
+          .uranus-countdown .cd-btn-primary {
+            background: linear-gradient(
+              90deg,
+              rgba(139, 92, 246, 0.88),
+              rgba(34, 211, 238, 0.7)
+            );
+            color: #070711;
+          }
+
+          .uranus-countdown .cd-btn-ghost {
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.9);
+          }
+
+          .uranus-countdown .cd-btn:hover {
+            filter: brightness(1.05);
+          }
+
+          .uranus-countdown .cd-toast {
+            margin-top: 10px;
+            display: none;
+            border-left: 3px solid rgba(34, 211, 238, 0.55);
+            background: rgba(34, 211, 238, 0.08);
+            padding: 10px 12px;
+            border-radius: 12px;
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 13px;
+          }
+
+          .uranus-countdown .cd-toast.show {
+            display: block;
+          }
+
+          @media (max-width: 520px) {
+            .uranus-countdown .cd-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+        </style>
+
+        <div class="cd-card" aria-live="polite">
+          <div class="cd-top">
+            <div>
+              <div class="cd-badge">LANÇAMENTO</div>
+              <h3 class="cd-title">Contagem regressiva</h3>
+              <p class="cd-sub">Faltam poucos dias. Fique ligado.</p>
+            </div>
+          </div>
+
+          <div class="cd-grid" role="group" aria-label="Contagem regressiva">
+            <div class="cd-unit">
+              <div class="cd-num" data-cd="days">00</div>
+              <div class="cd-label">Dias</div>
+            </div>
+            <div class="cd-unit">
+              <div class="cd-num" data-cd="hours">00</div>
+              <div class="cd-label">Horas</div>
+            </div>
+            <div class="cd-unit">
+              <div class="cd-num" data-cd="mins">00</div>
+              <div class="cd-label">Min</div>
+            </div>
+            <div class="cd-unit">
+              <div class="cd-num" data-cd="secs">00</div>
+              <div class="cd-label">Seg</div>
+            </div>
+          </div>
+
+          <div class="cd-meta">
+            <span data-cd="targetText">Data do lançamento: —</span>
+            <span class="cd-dot">•</span>
+            <span data-cd="statusText">Carregando…</span>
+          </div>
+
+          <div class="cd-actions">
+            <button
+              class="cd-btn cd-btn-ghost"
+              type="button"
+              data-cd="copyDate"
+            >
+              Copiar data
+            </button>
+            <button
+              class="cd-btn cd-btn-primary"
+              type="button"
+              data-cd="addCalendar"
+            >
+              Adicionar ao calendário
+            </button>
+          </div>
+
+          <div class="cd-toast" data-cd="toast"></div>
+        </div>
+
+        <script>
+          (() => {
+            const root = document.getElementById("uranus-launch-countdown");
+            if (!root || root.dataset.bound === "1") return;
+            root.dataset.bound = "1";
+
+            const pad2 = (n) => String(n).padStart(2, "0");
+
+            const el = (key) => root.querySelector(`[data-cd="${key}"]`);
+            const ui = {
+              days: el("days"),
+              hours: el("hours"),
+              mins: el("mins"),
+              secs: el("secs"),
+              targetText: el("targetText"),
+              statusText: el("statusText"),
+              toast: el("toast"),
+              copyDate: el("copyDate"),
+              addCalendar: el("addCalendar"),
+            };
+
+            const LAUNCH_AT =
+              root.getAttribute("data-launch-at") ||
+              "2026-05-07T19:00:00-03:00";
+            const target = new Date(LAUNCH_AT);
+
+            const showToast = (msg) => {
+              if (!ui.toast) return;
+              ui.toast.textContent = msg;
+              ui.toast.classList.add("show");
+              clearTimeout(showToast._t);
+              showToast._t = setTimeout(
+                () => ui.toast.classList.remove("show"),
+                1400,
+              );
+            };
+
+            if (Number.isNaN(target.getTime())) {
+              if (ui.statusText)
+                ui.statusText.textContent =
+                  "Data inválida. Verifique data-launch-at.";
+              return;
+            }
+
+            const fmt = new Intl.DateTimeFormat("pt-BR", {
+              dateStyle: "full",
+              timeStyle: "short",
+            });
+            if (ui.targetText)
+              ui.targetText.textContent = `Data do lançamento: ${fmt.format(target)}`;
+
+            let lastShownSec = null;
+
+            const setNumbers = (msLeft) => {
+              const totalSeconds = Math.max(0, Math.floor(msLeft / 1000));
+              const days = Math.floor(totalSeconds / 86400);
+              const hours = Math.floor((totalSeconds % 86400) / 3600);
+              const mins = Math.floor((totalSeconds % 3600) / 60);
+              const secs = totalSeconds % 60;
+
+              if (ui.days) ui.days.textContent = pad2(days);
+              if (ui.hours) ui.hours.textContent = pad2(hours);
+              if (ui.mins) ui.mins.textContent = pad2(mins);
+              if (ui.secs) ui.secs.textContent = pad2(secs);
+            };
+
+            const tick = () => {
+              const msLeft = target.getTime() - Date.now();
+              const secNow = Math.max(0, Math.floor(msLeft / 1000));
+
+              if (secNow === lastShownSec) return;
+              lastShownSec = secNow;
+
+              if (msLeft <= 0) {
+                setNumbers(0);
+                if (ui.statusText) ui.statusText.textContent = "Já lançou! 🎉";
+                return;
+              }
+
+              setNumbers(msLeft);
+              if (ui.statusText) ui.statusText.textContent = "Contando…";
+            };
+
+            tick();
+            const timer = setInterval(() => {
+              tick();
+              if (target.getTime() - Date.now() <= 0) clearInterval(timer);
+            }, 250);
+
+            if (ui.copyDate) {
+              ui.copyDate.addEventListener("click", async () => {
+                try {
+                  await navigator.clipboard.writeText(LAUNCH_AT);
+                  showToast("Data copiada!");
+                } catch {
+                  showToast("Não consegui copiar automaticamente.");
+                }
+              });
+            }
+
+            if (ui.addCalendar) {
+              ui.addCalendar.addEventListener("click", () => {
+                const toUTC = (d) => {
+                  const yyyy = d.getUTCFullYear();
+                  const mm = pad2(d.getUTCMonth() + 1);
+                  const dd = pad2(d.getUTCDate());
+                  const hh = pad2(d.getUTCHours());
+                  const mi = pad2(d.getUTCMinutes());
+                  const ss = pad2(d.getUTCSeconds());
+                  return `${yyyy}${mm}${dd}T${hh}${mi}${ss}Z`;
+                };
+
+                const start = target;
+                const end = new Date(target.getTime() + 60 * 60 * 1000);
+
+                const text = encodeURIComponent("Lançamento");
+                const dates = `${toUTC(start)}/${toUTC(end)}`;
+                const details = encodeURIComponent("Lançamento oficial.");
+                const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${dates}&details=${details}`;
+
+                window.open(url, "_blank", "noopener,noreferrer");
+              });
+            }
+          })();
+        </script>
+      </div>
+    </header>
+
+    <section id="tracks" class="section">
+      <div class="container">
+        <div
+          class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3"
+        >
+          <div>
+            <h2 class="section-title">Faixas</h2>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="glass p-3 p-md-4">
+              <div class="d-grid gap-2" id="trackList">
+                <div class="track">
+                  <div><strong>1. Águia</strong><br /><small>02:33</small></div>
+                  <span class="pill">Rap/Trap</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>2. Fato$ &amp; Mentira$ (feat. Unj0g)</strong
+                    ><br /><small>03:24</small>
+                  </div>
+                  <span class="pill">Rap/Trap</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>3. NAVNAX9</strong><br /><small>02:09</small>
+                  </div>
+                  <span class="pill">Plug</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>4. Quem é Quem</strong><br /><small>02:01</small>
+                  </div>
+                  <span class="pill">Plug</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>5. Dramática (feat. Woodan)</strong><br /><small
+                      >01:51</small
+                    >
+                  </div>
+                  <span class="pill">Plug</span>
+                </div>
+                <div class="track">
+                  <div><strong>6. Wave</strong><br /><small>02:52</small></div>
+                  <span class="pill">Trap</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong
+                      >7. Jersey
+                      <span class="gradient-text">Waves</span></strong
+                    ><br /><small>02:52</small>
+                  </div>
+                  <span class="pill">Jersey Club/R&B</span>
+                </div>
+                <div class="track">
+                  <div><strong>8. Honey</strong><br /><small>02:27</small></div>
+                  <span class="pill">Hip Hop 00s</span>
+                </div>
+                <div class="track">
+                  <div><strong>9. Way</strong><br /><small>03:08</small></div>
+                  <span class="pill">R&B/Soul</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="glass p-3 p-md-4 h-100">
+              <h3 class="h5 fw-bold mb-2">Sobre o Álbum</h3>
+              <p class="subtle">
+                “<span class="gradient-text">Waves</span> é um mergulho em uma
+                atmosfera sonora que mistura o melhor do rap, trap, plug, Jersey
+                Club e R&B, criando uma experiência auditiva única. Com beats
+                envolventes, letras introspectivas e uma vibe que transita entre
+                a nostalgia e o futurismo, o álbum é conceitual e segue uma
+                narrativa que tem como base a história do single “Iphone Verde”.
+              </p>
+
+              <div class="mt-3">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="pill"
+                    ><i class="bi bi-envelope"></i>
+                    rn7.22oficial@gmail.com</span
+                  >
+                  <span class="pill"
+                    ><i class="bi bi-instagram"></i> @ruaan.rn / @rn7<span
+                      class="gradient-text"
+                      >waves</span
+                    >
+                  </span>
+                  <span class="pill"
+                    ><i class="bi bi-whatsapp"></i> +55 (83) 9 9332-9141
+                  </span>
+                </div>
+              </div>
+
+              <hr class="border-opacity-10 my-3" />
+
+              <div class="d-grid gap-2">
+                <a class="btn btn-neo focus-ring" href="#links"
+                  ><i class="bi bi-box-arrow-up-right"></i> Abrir links</a
+                >
+                <a class="btn btn-ghost focus-ring" href="#game"
+                  ><i class="bi bi-controller"></i> Jogar para desbloquear
+                  “Easter egg”</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="col-12 col-lg-10 mx-auto">
+      <div class="glass p-3 p-md-4">
+        <h3 class="h5 fw-bold mb-2">Easter egg</h3>
+        <p class="subtle mb-2">
+          Quando o score passa de <strong>2222</strong>, você pode desbloquear
+          um link secreto.
+        </p>
+        <div class="d-grid gap-2">
+          <button
+            class="btn btn-ghost focus-ring"
+            id="btnSecret"
+            disabled
+            type="button"
+          >
+            <i class="bi bi-lock"></i> Link secreto
+          </button>
+          <small class="subtle"><code>SECRET_URL</code> YouTube </small>
+        </div>
+      </div>
+    </div>
+
+    <section id="game" class="section">
+      <div class="container">
+        <div
+          class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3"
+        >
+          <div>
+            <h2 class="section-title">Wave Rider</h2>
+          </div>
+          <div class="d-flex gap-2">
+            <button
+              class="btn btn-ghost btn-sm focus-ring"
+              data-bs-toggle="modal"
+              data-bs-target="#gameHelp"
+              type="button"
+            >
+              <i class="bi bi-info-circle"></i> Controles
+            </button>
+            <button
+              class="btn btn-sm btn-neo focus-ring"
+              id="btnStart"
+              type="button"
+            >
+              <i class="bi bi-play-fill"></i> Iniciar
+            </button>
+          </div>
+        </div>
+
+        <div class="game-stage" id="gameStage">
+          <div
+            class="glass p-2 mb-2 d-flex flex-wrap gap-2 align-items-center justify-content-between game-info-bar"
+            aria-live="polite"
+          >
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <span class="pill"
+                ><i class="bi bi-trophy"></i> Score:
+                <span id="score">0</span></span
+              >
+              <span class="pill"
+                ><i class="bi bi-graph-up"></i> Melhor:
+                <span id="best">0</span></span
+              >
+              <span class="pill"
+                ><i class="bi bi-lightning-charge"></i> Combo:
+                <span id="combo">x1</span></span
+              >
+              <span class="pill"
+                ><i class="bi bi-fire"></i> Stoke:
+                <span id="stoke">0%</span></span
+              >
+            </div>
+          </div>
+
+          <div class="game-shell no-select">
+            <div class="game-controls">
+              <button
+                class="btn btn-ghost btn-sm focus-ring"
+                id="btnPause"
+                title="Pausar"
+                type="button"
+              >
+                <i class="bi bi-pause-fill"></i>
+              </button>
+              <button
+                class="btn btn-ghost btn-sm focus-ring"
+                id="btnRestart"
+                title="Reiniciar"
+                type="button"
+              >
+                <i class="bi bi-arrow-clockwise"></i>
+              </button>
+            </div>
+            <canvas
+              id="surfCanvas"
+              width="1100"
+              height="520"
+              aria-label="Jogo de surf"
+              role="img"
+            ></canvas>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-3">
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="glass p-3 p-md-4">
+              <h3 class="h5 fw-bold mb-2">Como funciona</h3>
+              <ul class="subtle mb-3">
+                <li>
+                  <span class="kbd">Espaço</span> / <span class="kbd">↑</span> /
+                  <span class="kbd">W</span> = pular
+                </li>
+                <li>
+                  No ar: <span class="kbd">←</span> /
+                  <span class="kbd">A</span> e <span class="kbd">→</span> /
+                  <span class="kbd">D</span> para girar e fazer trick
+                </li>
+                <li>
+                  <span class="kbd">Shift</span> (ou <span class="kbd">B</span>)
+                  = boost (consome “Stoke”)
+                </li>
+              </ul>
+
+              <h3 class="h5 fw-bold mb-2">Celular</h3>
+              <ul class="subtle mb-0">
+                <li>Toque para pular</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="section">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-lg-8 mx-auto">
+            <div class="glass p-3 p-md-4">
+              <div
+                class="d-flex align-items-center justify-content-between flex-wrap gap-2"
+              >
+                <div>
+                  <h2 class="section-title mb-1">Ouça / Siga</h2>
+                </div>
+                <span class="pill"><i class="bi bi-share"></i> Links</span>
+              </div>
+
+              <div class="row g-2 mt-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-neo w-100 focus-ring"
+                    href="https://open.spotify.com/intl-pt/artist/4WqSxEv10gb0D2rk1Z0r74"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-spotify"></i> Spotify</a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-ghost w-100 focus-ring"
+                    href="https://music.apple.com/br/artist/rn7/1569750710"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-apple"></i> Apple Music</a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-ghost w-100 focus-ring"
+                    href="https://www.youtube.com/@rn7pb"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-youtube"></i> YouTube</a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-ghost w-100 focus-ring"
+                    href="https://soundcloud.com/stiles-ff-42959209"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-soundwave"></i> SoundCloud</a
+                  >
+                </div>
+              </div>
+
+              <div class="note tiny mt-3 mb-0">
+                <strong>Confira a origem do Projeto</strong>
+                <span class="gradient-text">Waves:</span>
+
+                <div class="row g-1 mt-3">
+                  <div class="col-12 col-md-6 col-lg-6 mx-auto">
+                    <a
+                      class="btn btn-neo w-100 focus-ring"
+                      href="https://open.spotify.com/intl-pt/track/0STxbE3s7LXh4h7e6Izceh?si=4e0e3e753a3641d9"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><i class="bi bi-spotify"></i> Iphone Verde (2021)</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-2 border-0" />
+
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  class="btn btn-ghost focus-ring"
+                  id="btnShare"
+                  type="button"
+                >
+                  <i class="bi bi-share"></i> Compartilhar
+                </button>
+                <a class="btn btn-ghost focus-ring" href="#top"
+                  ><i class="bi bi-arrow-up"></i> Voltar ao topo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2"
+        >
+          <div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="glow-dot" aria-hidden="true"></span>
+              <strong>Uranus Records</strong>
+            </div>
+            <div class="tiny">
+              © <span id="year"></span> • Rn7 -
+              <span class="gradient-text">Waves</span>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="pill text-decoration-none" href="#links"
+              ><i class="bi bi-link-45deg"></i> Links</a
+            >
+            <a class="pill text-decoration-none" href="#game"
+              ><i class="bi bi-controller"></i> Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="howToModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-surface">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold">Cronologia</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ol class="subtle mb-0">
+              <li>
+                <strong>Wave:</strong>
+                <code>2024</code>
+              </li>
+              <li>
+                <strong
+                  >Jersey <span class="gradient-text">Waves</span>:</strong
+                >
+                <code>2024</code>
+              </li>
+              <li><strong>Quem é Quem:</strong> <code>2024</code></li>
+              <li><strong>NAVNAX9:</strong> <code>2025</code></li>
+              <li><strong>Fato$ &amp; Mentira$:</strong> <code>2025</code></li>
+              <li><strong>Águia:</strong> <code>2025</code></li>
+              <li><strong>Dramática:</strong> <code>2025</code></li>
+              <li><strong>Honey:</strong> <code>2025</code></li>
+              <li><strong>Way:</strong> <code>2026</code></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="gameHelp" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-surface">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold">Controles do Wave Rider</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="subtle mb-0">
+              <li>
+                Pular: <span class="kbd">Espaço</span> /
+                <span class="kbd">↑</span> / <span class="kbd">W</span> (ou
+                toque)
+              </li>
+              <li>
+                Trick no ar: <span class="kbd">←</span>/<span class="kbd"
+                  >A</span
+                >
+                e <span class="kbd">→</span>/<span class="kbd">D</span>
+              </li>
+              <li>
+                Boost: <span class="kbd">Shift</span> (ou
+                <span class="kbd">B</span>)
+              </li>
+              <li><span class="kbd">P</span>: pausar</li>
+              <li><span class="kbd">R</span>: reiniciar</li>
+              <li><span class="kbd">Esc</span>: sair do modo jogo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
